@@ -6,8 +6,9 @@ file for the telegram bot
 
 
 from telegram.ext import Application
+import os
 
-telegram_token = "8317586678:AAFWAcbvHV8mYlFUD10BvONL5E4YiE0MXMQ"
+telegram_token = os.getenv("telegram_token")
 
 
 def create_bot():
